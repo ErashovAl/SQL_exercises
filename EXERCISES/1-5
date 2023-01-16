@@ -1,0 +1,35 @@
+--Задачи с сайта SQL_EX.RU--
+--№1
+--Найдите номер модели, скорость и размер жесткого диска для всех ПК стоимостью менее 500 дол. 
+--Вывести: model, speed и hd.
+--Решение:
+SELECT PC.model, PC.speed, PC.hd FROM PC
+WHERE PC.price < 500;
+
+--№2
+--Найдите производителей принтеров. 
+--Вывести: maker
+--Решение:
+SELECT DISTINCT maker FROM Product
+WHERE type = 'Printer';
+
+--№3
+--Найдите номер модели, объем памяти и размеры экранов ПК-блокнотов, 
+--цена которых превышает 1000 дол.
+--Решение:
+SELECT model, ram, screen FROM Laptop
+WHERE price > 1000;
+
+--№4
+--Найдите все записи таблицы Printer для цветных принтеров.
+--Решение:
+SELECT * FROM Printer
+WHERE color = 'y'
+
+--№5
+--Найдите номер модели, скорость и размер жесткого диска ПК, 
+--имеющих 12x или 24x CD и цену менее 600 дол.
+--Решение:
+SELECT model, speed, hd FROM PC
+WHERE (cd = '12x' OR '24x') AND price <600; 
+

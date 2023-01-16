@@ -1,0 +1,1 @@
+CREATE DATABASE Computer_shop WITH PASSWORD 'somepass';

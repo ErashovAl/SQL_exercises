@@ -1,0 +1,36 @@
+CREATE TABLE Product (
+    Maker char(30), 
+    Model varchar(30), 
+    Type varchar(10), 
+    Constraint Product_pk PRIMARY KEY(Model));
+CREATE TABLE Laptop (
+    Code int, 
+    Model varchar(30) REFERENCES Product(Model) ON UPDATE CASCADE ON DELETE CASCADE,
+    Speed int,
+    RAM int,
+    HD int,
+    Price int,
+    Screen int,
+    CONSTRAINT Laptop_pk PRIMARY KEY(Code)
+    );
+CREATE TABLE PC (
+    Code int,
+    Model varchar(30) REFERENCES Product(Model) ON UPDATE CASCADE ON DELETE CASCADE,
+    Speed int,
+    RAM int,
+    HD int,
+    CD int,
+    Price int,
+    CONSTRAINT PC_pk PRIMARY KEY(Code)
+    );
+CREATE TABLE Printer (
+    Code int,
+    Model varchar(30) REFERENCES Product(Model) ON UPDATE CASCADE ON DELETE CASCADE,
+    Color char(1),
+    Type varchar(10),
+    Price int,
+    CONSTRAINT Printer_pk PRIMARY KEY(code)
+    );
+
+
+)

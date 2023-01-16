@@ -1,0 +1,4 @@
+INSERT INTO Product VALUES 
+    ('A', '111', 'Laptop'), ('B', '112', 'Laptop'), ('A', '113', 'Laptop'),
+    ('B', '114, 'PC'), ('A', '115', 'PC'), ('C', '116', 'PC'),
+    ('A', '117', 'Printer'), ('C', '118', 'Printer'), ('A', '119', 'Printer');

@@ -1,0 +1,2 @@
+INSERT INTO Printer VALUES (7954, '117', 'y', 'jet', 459), 
+(7551, '118', 'n', 'laser', 419), (7850, '119', 'y', 'jet', 479)
